@@ -1,0 +1,20 @@
+{
+  "name": "BrainrotDefense-World",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "BrainrotWorld": { "$path": "src/ReplicatedStorage/BrainrotWorld" }
+    },
+    "ServerStorage": {
+      "WorldBuilder": { "$path": "src/ServerStorage/WorldBuilder" }
+    },
+    "ServerScriptService": {
+      "BrainrotWorldServices": { "$path": "src/ServerScriptService/BrainrotWorldServices" }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "BrainrotWorldClient": { "$path": "src/StarterPlayerScripts" }
+      }
+    }
+  }
+}
