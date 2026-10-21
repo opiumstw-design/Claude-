@@ -11,6 +11,7 @@ uses "title" + "items". Each segment is one clip, a whole number of beats long;
   "audio": "media/sources/Download_5.mp4", "start": 0.0, "end": 30.1,
   "size": [1080, 1920], "fps": 30,
   "transition": "white",            # default for every cut: white | mix | cut
+  "layout": "window", "window_ratio": 1.0,   # optional: footage in a centred w/h window, black bars
   "caption": "when ur genuinely chilling and ...",            # style A
   "title": "TOP 5 WAYS TO BE NONCHALANT",                     # style B
   "items": ["use both airpods", "..."],
@@ -22,7 +23,8 @@ uses "title" + "items". Each segment is one clip, a whole number of beats long;
 }
 "speed" < 1 is slow motion (for 120/240 fps clips). "vf" is an extra ffmpeg
 filter applied to the clip before it is cropped to the frame. "x" is the horizontal
-focus for cropping wide clips (0 = left edge, 1 = right); "fit": "bars" letterboxes instead.
+focus for cropping wide clips (0 = left edge, 1 = right), "y" the vertical focus for
+tall clips (0 = top); "fit": "bars" letterboxes instead.
 """
 import json
 import os
@@ -85,23 +87,37 @@ def draw_text(img, xy, text, font, anchor="la"):
                              stroke_width=2, stroke_fill=(0, 0, 0, 200))
 
 
+def window(spec, W, H):
+    """Footage window for layout "window": full width, `window_ratio` (w/h) tall, centred; else None."""
+    if spec.get("layout") != "window":
+        return None
+    bh = min(H, int(round(W / spec.get("window_ratio", 1.0) / 2)) * 2)
+    return W, bh, (H - bh) // 2 // 2 * 2
+
+
 def overlay(spec, shown, W, H):
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    box = window(spec, W, H)
     if "caption" in spec:
         font = ImageFont.truetype(SEMI, int(W * spec.get("caption_size", 0.052)))
         lines = wrap(spec["caption"], font, W * 0.84)
         lh = int(font.size * 1.22)
-        y = int(H * spec.get("caption_y", 0.40)) - lh * len(lines) // 2
+        y = int(H * spec.get("caption_y", 0.47 if box else 0.40)) - lh * len(lines) // 2
         for line in lines:
             draw_text(img, (W // 2, y), line, font, anchor="ma")
             y += lh
         return img
 
     tfont = ImageFont.truetype(BOLD, int(W * 0.062))
-    y = int(H * 0.155)
-    for line in wrap(spec["title"].upper(), tfont, W * 0.84):
+    tlines = wrap(spec["title"].upper(), tfont, W * 0.84)
+    tlh = int(tfont.size * 1.18)
+    # Full-frame: title near the top. Window layout: title sits in the black bar above the footage.
+    y = int(H * 0.155) if not box else box[2] - int(H * 0.018) - tlh * len(tlines)
+    for line in tlines:
         draw_text(img, (W // 2, y), line, tfont, anchor="ma")
-        y += int(tfont.size * 1.18)
+        y += tlh
+    if box:
+        y = box[2] - int(H * 0.012)
     lfont = ImageFont.truetype(SEMI, int(W * 0.05))
     items = spec["items"]
     num_w = lfont.getlength(f"{len(items)}.  ")
@@ -116,13 +132,19 @@ def overlay(spec, shown, W, H):
     return img
 
 
-def fit(s, W, H):
-    """Fill the frame: "cover" crops (around horizontal focus "x", 0..1); "bars" letterboxes in black."""
+def fit(s, W, H, box=None):
+    """Fill the frame (or the footage window, black around it).
+
+    "cover" crops around focus "x"/"y" (0..1); "bars" letterboxes in black instead.
+    """
+    bw, bh, top = box or (W, H, 0)
     if s.get("fit") == "bars":
-        return [f"scale={W}:{H}:force_original_aspect_ratio=decrease", f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:black"]
-    fx = s.get("x", 0.5)
-    return [f"scale={W}:{H}:force_original_aspect_ratio=increase",
-            f"crop={W}:{H}:'max(0,min(iw-{W},iw*{fx}-{W}/2))':(ih-{H})/2"]
+        f = [f"scale={bw}:{bh}:force_original_aspect_ratio=decrease", f"pad={bw}:{bh}:(ow-iw)/2:(oh-ih)/2:black"]
+    else:
+        fx, fy = s.get("x", 0.5), s.get("y", 0.5)
+        f = [f"scale={bw}:{bh}:force_original_aspect_ratio=increase",
+             f"crop={bw}:{bh}:'max(0,min(iw-{bw},iw*{fx}-{bw}/2))':'max(0,min(ih-{bh},ih*{fy}-{bh}/2))'"]
+    return f + ([f"pad={W}:{H}:0:{top}:black"] if box else [])
 
 
 def probe_duration(path):
@@ -158,14 +180,16 @@ def main(spec_path, out_path):
     tmp = tempfile.mkdtemp(prefix="edit_")
     seg_paths = []
     for k, s in enumerate(segs):
-        n = cuts[k + 1] - cuts[k] + pre[k] + post[k]
+        # +2 spare frames: xfade drops what's left of the outgoing clip, and the spare keeps a
+        # 1-frame "cut" from ending the chain early when offsets round badly.
+        n = cuts[k + 1] - cuts[k] + pre[k] + post[k] + 2
         speed = s.get("speed", 1.0)
         need = n / fps * speed
         t_in = s.get("in", 0) - pre[k] / fps * speed
         t_in = max(0.0, min(t_in, probe_duration(s["src"]) - need - 0.05))
         vf = ",".join(x for x in [
             s.get("vf"), f"setpts=PTS/{speed}" if speed != 1 else None,
-            *fit(s, W, H), "setsar=1",
+            *fit(s, W, H, window(spec, W, H)), "setsar=1",
             f"fps={fps}", f"tpad=stop_mode=clone:stop={n}", "settb=1/" + str(fps)] if x)
         p = os.path.join(tmp, f"seg{k:03d}.mp4")
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t_in:.3f}", "-i", s["src"], "-vf", vf,

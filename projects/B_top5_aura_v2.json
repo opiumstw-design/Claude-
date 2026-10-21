@@ -1,0 +1,137 @@
+{
+ "audio": "media/sources/Download_5.mp4",
+ "start": 0,
+ "end": 30.1,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "layout": "window",
+ "window_ratio": 1.0,
+ "transition": "white",
+ "title": "top 5 ways to keep ur aura",
+ "items": [
+  "never text back first",
+  "never over react",
+  "never explain urself",
+  "stay unbothered",
+  "let them wonder"
+ ],
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 6,
+   "beats": 4,
+   "y": 0.5
+  },
+  {
+   "src": "media/clips/2026-07-08_00.06.44.mov",
+   "in": 1,
+   "beats": 4,
+   "y": 0.45
+  },
+  {
+   "src": "media/clips/2026-08-17_15.29.57.mp4",
+   "in": 3,
+   "beats": 4,
+   "y": 0.4,
+   "show": [
+    1
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-20_18.03.44.mp4",
+   "in": 5.0,
+   "beats": 4,
+   "x": 0.27,
+   "transition": "cut"
+  },
+  {
+   "src": "media/clips/2026-08-26_18.04.07.mov",
+   "in": 2.3,
+   "beats": 4,
+   "y": 0.45,
+   "show": [
+    2
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-24_14.11.58.mp4",
+   "in": 1.0,
+   "beats": 4,
+   "x": 0.62,
+   "transition": "cut"
+  },
+  {
+   "src": "media/clips/2026-08-17_15.29.01.mov",
+   "in": 1,
+   "beats": 4,
+   "y": 0.4,
+   "show": [
+    3
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-20_17.48.11.mp4",
+   "in": 2.0,
+   "beats": 4,
+   "x": 0.5,
+   "transition": "cut"
+  },
+  {
+   "src": "media/clips/2026-07-11_18.33.47.mov",
+   "in": 1,
+   "beats": 4,
+   "y": 0.4,
+   "show": [
+    4
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-20_18.18.28.mp4",
+   "in": 4,
+   "beats": 4,
+   "x": 0.38,
+   "transition": "cut"
+  },
+  {
+   "src": "media/clips/2026-04-20_22.16.04.mp4",
+   "in": 6,
+   "beats": 4,
+   "y": 0.45,
+   "show": [
+    5
+   ]
+  },
+  {
+   "src": "media/clips/2026-06-22_13.36.40.mp4",
+   "in": 0.3,
+   "beats": 4,
+   "y": 0.35,
+   "transition": "cut"
+  },
+  {
+   "src": "media/clips/2026-04-28_16.59.15.mp4",
+   "in": 5.5,
+   "beats": 4,
+   "y": 0.55,
+   "transition": "mix"
+  },
+  {
+   "src": "media/clips/2026-07-06_16.46.49.mov",
+   "in": 2.0,
+   "beats": 4,
+   "speed": 0.25,
+   "y": 0.6,
+   "transition": "mix"
+  },
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 12.5,
+   "beats": 4,
+   "y": 0.6,
+   "transition": "mix"
+  }
+ ]
+}
