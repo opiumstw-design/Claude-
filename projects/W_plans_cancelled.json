@@ -1,0 +1,22 @@
+{
+ "audio": "media/sources/Download_7.mp4",
+ "end": 7.0,
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "when the plans get cancelled but ur already outside",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 0.3,
+   "beats": 64,
+   "y": 0.45
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}

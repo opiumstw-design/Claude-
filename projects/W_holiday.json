@@ -1,0 +1,22 @@
+{
+ "audio": "media/sources/Download_6.mp4",
+ "end": 10.0,
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "me walking round on holiday like i dont have exams in 2 weeks",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 0.3,
+   "beats": 64,
+   "y": 0.6
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}

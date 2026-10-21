@@ -1,0 +1,26 @@
+{
+ "audio": "media/sources/Download_7.mp4",
+ "end": 6.4,
+ "segments": [
+  {
+   "src": "media/clips/2026-07-08_00.06.44.mov",
+   "in": 0.0,
+   "beats": 4,
+   "caption": "teacher: who wants to read their homework out"
+  },
+  {
+   "src": "media/clips/2026-08-26_11.53.32.mov",
+   "in": 0.0,
+   "beats": 64,
+   "caption": "me who didnt do it:",
+   "transition": "cut"
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}

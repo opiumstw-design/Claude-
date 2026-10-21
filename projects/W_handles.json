@@ -1,0 +1,22 @@
+{
+ "audio": "media/sources/Download_5.mp4",
+ "start": 0.5,
+ "end": 10.5,
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "me practising my handles for a team i aint even on",
+ "segments": [
+  {
+   "src": "media/clips/2026-04-24_13.49.27.mp4",
+   "in": 1.0,
+   "beats": 64,
+   "y": 0.55
+  }
+ ],
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}

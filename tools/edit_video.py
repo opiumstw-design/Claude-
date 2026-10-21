@@ -12,12 +12,17 @@ ranking uses "title" + "items". Each segment is one clip, a whole number of beat
   "size": [1080, 1920], "fps": 30,
   "transition": "mix",              # default for every cut: white | mix | cut
   "caption": "when ur genuinely chilling and ...",
+  "layout": "window", "window_ratio": 1.0,     # optional "cropped" look: footage cropped into a
+                                               # centred w/h window with black bars, text kept central
   "title": "TOP 5 WAYS TO BE NONCHALANT", "items": ["use both airpods", "..."],
   "segments": [
     {"src": "media/clips/x.mov", "in": 1.0, "beats": 4},
-    {"src": "media/clips/y.mov", "in": 2.5, "beats": 4, "show": [1], "transition": "white"}
+    {"src": "media/clips/y.mov", "in": 2.5, "beats": 4, "show": [1], "transition": "white"},
+    {"src": "media/clips/z.mov", "in": 0, "beats": 4, "caption": "me:"}
   ]
 }
+A segment "caption" (skits: "teacher: ..." then "me:") replaces the caption from that
+segment on, until another segment sets one.
 Clips are never zoomed: one that is already about 9:16 fills the frame, anything wider
 (landscape, square) is letterboxed in black at full width. "fit": "cover" | "bars" forces
 one or the other, and "x"/"y" (0..1) move the crop of a "cover" clip. "speed" < 1 is slow
@@ -116,11 +121,13 @@ def draw_text(img, xy, text, font, center=False):
         d.text((x, xy[1]), ch, font=font, fill=(255, 255, 255, 255), stroke_width=3, stroke_fill=(0, 0, 0, 220))
 
 
-def overlay(spec, shown, W, H):
+def overlay(spec, shown, caption, W, H):
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    if "caption" in spec:
+    if "title" not in spec:
+        if not caption:
+            return img
         font = ImageFont.truetype(SEMI, int(W * spec.get("caption_size", 0.058)))
-        lines = wrap(spec["caption"], font, W * 0.86)
+        lines = wrap(caption, font, W * 0.86)
         lh = int(font.size * 1.2)
         y = int(H * spec.get("caption_y", 0.5)) - lh * len(lines) // 2
         for line in lines:
@@ -158,17 +165,29 @@ def probe(path):
     return {"w": w, "h": h, "transfer": st.get("color_transfer"), "duration": float(out["format"]["duration"])}
 
 
-def fit(s, info, W, H):
-    """Fill the frame without zooming: near-9:16 clips cover, anything wider is letterboxed."""
+def window(spec, W, H):
+    """Footage box for the "window" (cropped) layout: full width, window_ratio (w/h), centred."""
+    if spec.get("layout") != "window":
+        return None
+    bh = min(H, int(round(W / spec.get("window_ratio", 1.0) / 2)) * 2)
+    return W, bh, (H - bh) // 4 * 2
+
+
+def fit(s, info, W, H, box=None):
+    """Full frame: near-9:16 clips cover, anything wider is letterboxed (never zoomed).
+    Window layout: every clip is cropped to fill the window, black bars around it."""
     w, h = info["w"], info["h"]
     if "transpose" in (s.get("vf") or ""):
         w, h = h, w
-    mode = s.get("fit") or ("cover" if abs((w / h) / (W / H) - 1) < 0.2 else "bars")
+    bw, bh, top = box or (W, H, 0)
+    mode = s.get("fit") or ("cover" if box or abs((w / h) / (W / H) - 1) < 0.2 else "bars")
     if mode == "bars":
-        return [f"scale={W}:{H}:force_original_aspect_ratio=decrease", f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:black"]
-    fx, fy = s.get("x", 0.5), s.get("y", 0.5)
-    return [f"scale={W}:{H}:force_original_aspect_ratio=increase",
-            f"crop={W}:{H}:'max(0,min(iw-{W},iw*{fx}-{W}/2))':'max(0,min(ih-{H},ih*{fy}-{H}/2))'"]
+        f = [f"scale={bw}:{bh}:force_original_aspect_ratio=decrease", f"pad={bw}:{bh}:(ow-iw)/2:(oh-ih)/2:black"]
+    else:
+        fx, fy = s.get("x", 0.5), s.get("y", 0.5)
+        f = [f"scale={bw}:{bh}:force_original_aspect_ratio=increase",
+             f"crop={bw}:{bh}:'max(0,min(iw-{bw},iw*{fx}-{bw}/2))':'max(0,min(ih-{bh},ih*{fy}-{bh}/2))'"]
+    return f + ([f"pad={W}:{H}:0:{top}:black"] if box else [])
 
 
 def main(spec_path, out_path):
@@ -219,7 +238,7 @@ def main(spec_path, out_path):
         hdr = TONEMAP.format(t=info["transfer"]) if info["transfer"] in ("arib-std-b67", "smpte2084") else None
         vf = ",".join(x for x in [
             hdr, s.get("vf"), f"setpts=PTS/{speed}" if speed != 1 else None,
-            *fit(s, info, W, H), "setsar=1", f"fps={fps}", f"tpad=stop_mode=clone:stop={n}",
+            *fit(s, info, W, H, window(spec, W, H)), "setsar=1", f"fps={fps}", f"tpad=stop_mode=clone:stop={n}",
             "settb=1/" + str(fps), *fades] if x)
         p = os.path.join(tmp, f"seg{k:03d}.mp4")
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t_in:.3f}", "-i", s["src"], "-vf", vf,
@@ -228,12 +247,15 @@ def main(spec_path, out_path):
                         "-color_primaries", "bt709", "-color_trc", "bt709", p], check=True)
         seg_paths.append(p)
 
-    # Text states: list items appear on the first frame of the segment that "show"s them.
-    states, shown = [(0, set())], set()
+    # Text states: list items appear on the first frame of the segment that "show"s them;
+    # a segment caption takes over from its first frame.
+    caption = spec.get("caption")
+    states, shown = [(0, set(), segs[0].get("caption", caption))], set()
     for k, s in enumerate(segs):
-        if s.get("show"):
-            shown = shown | set(s["show"])
-            states.append((cuts[k], set(shown)))
+        if s.get("show") or (k and "caption" in s):
+            shown = shown | set(s.get("show", []))
+            caption = s.get("caption", states[-1][2])
+            states.append((cuts[k], set(shown), caption))
 
     inputs = []
     for p in seg_paths:
@@ -246,10 +268,10 @@ def main(spec_path, out_path):
         chain.append(f"{last}[{k}:v]xfade=transition=fade:duration={d[k] / fps:.4f}:"
                      f"offset={(cuts[k] - pre[k]) / fps:.4f}{out}")
         last = out
-    for j, (f0, s) in enumerate(states):
+    for j, (f0, s, cap) in enumerate(states):
         f1 = states[j + 1][0] if j + 1 < len(states) else total + fps
         png = os.path.join(tmp, f"ov{j}.png")
-        overlay(spec, s, W, H).save(png)
+        overlay(spec, s, cap, W, H).save(png)
         inputs += ["-i", png]
         out = f"[t{j}]"
         chain.append(f"{last}[{a_idx + 1 + j}:v]overlay=0:0:enable='between(n,{f0},{f1 - 1})'{out}")
@@ -262,7 +284,7 @@ def main(spec_path, out_path):
                     "bt709", "-color_trc", "bt709", "-r", str(fps), "-c:a", "aac", "-b:a", "192k",
                     "-ar", "44100", "-frames:v", str(total), "-movflags", "+faststart", out_path], check=True)
     print(f"wrote {out_path} ({dur:.2f}s, {len(segs)} clips"
-          + (", text changes at " + ", ".join(f"{f / fps:.2f}" for f, _ in states[1:]) if len(states) > 1 else "")
+          + (", text changes at " + ", ".join(f"{st[0] / fps:.2f}" for st in states[1:]) if len(states) > 1 else "")
           + ")")
 
 

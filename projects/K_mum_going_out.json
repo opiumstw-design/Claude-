@@ -1,0 +1,32 @@
+{
+ "audio": "media/sources/Download_4.mp4",
+ "end": 11.8,
+ "segments": [
+  {
+   "src": "media/clips/2026-07-07_20.59.31.mov",
+   "in": 3.0,
+   "beats": 4,
+   "caption": "mum: im going out for 2 hours dont do anything stupid"
+  },
+  {
+   "src": "media/clips/2026-04-20_22.14.31.mp4",
+   "in": 0.3,
+   "beats": 6,
+   "caption": "me 5 minutes later:",
+   "transition": "white"
+  },
+  {
+   "src": "media/clips/2026-04-20_22.16.04.mp4",
+   "in": 5.0,
+   "beats": 64,
+   "transition": "mix"
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}
