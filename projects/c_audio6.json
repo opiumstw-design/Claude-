@@ -1,0 +1,151 @@
+{
+ "audio": "media/sources/Download_6.mp4",
+ "start": 0,
+ "end": 15.3,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "snap": true,
+ "events": [
+  {
+   "t": 0,
+   "text": "...",
+   "bg": "white"
+  },
+  {
+   "t": 3.75,
+   "text": "tu"
+  },
+  {
+   "t": 4.0,
+   "text": "tu veux"
+  },
+  {
+   "t": 4.25,
+   "text": "tu veux\nla plus"
+  },
+  {
+   "t": 4.5,
+   "text": "tu veux   la\nplus bonne"
+  },
+  {
+   "t": 5.0,
+   "text": "tu veux   la\nplus bonne\nouais"
+  },
+  {
+   "t": 5.25,
+   "text": "tu veux   la\nplus bonne\nouais, yeah"
+  },
+  {
+   "t": 5.5,
+   "text": "la",
+   "bg": "black",
+   "fx": "blur"
+  },
+  {
+   "t": 5.75,
+   "text": "la\nplus"
+  },
+  {
+   "t": 6.0,
+   "text": "la plus\nbonne"
+  },
+  {
+   "t": 6.5,
+   "text": "tu",
+   "bg": "white"
+  },
+  {
+   "t": 6.75,
+   "text": "tu",
+   "bg": "black"
+  },
+  {
+   "t": 7.0,
+   "text": "tu veux"
+  },
+  {
+   "t": 7.25,
+   "text": "tu veux\nla plus"
+  },
+  {
+   "t": 7.5,
+   "text": "tu veux   la\nplus bonne"
+  },
+  {
+   "t": 8.0,
+   "text": "tu veux   la\nplus bonne\nouais"
+  },
+  {
+   "t": 8.75,
+   "text": "tu veux   la\nplus bonne\nouais, yeah"
+  },
+  {
+   "t": 9.0,
+   "text": "tu veux   la\nplus bonne\nouais, yeah",
+   "bg": "white",
+   "fx": "blur"
+  },
+  {
+   "t": 9.75,
+   "text": "tu"
+  },
+  {
+   "t": 10.0,
+   "text": "tu veux\nla"
+  },
+  {
+   "t": 10.25,
+   "text": "tu veux\nla plus"
+  },
+  {
+   "t": 10.5,
+   "text": "tu veux   la\nplus bonne"
+  },
+  {
+   "t": 10.75,
+   "text": "tu veux   la\nplus bonne\nouais"
+  },
+  {
+   "t": 11.5,
+   "text": "tu veux   la\nplus bonne\nouais, yeah"
+  },
+  {
+   "t": 12.0,
+   "text": "tu veux   la\nplus bonne\nouais, yeah",
+   "bg": "black",
+   "fx": "blur"
+  },
+  {
+   "t": 12.75,
+   "text": "tu"
+  },
+  {
+   "t": 13.0,
+   "text": "tu veux"
+  },
+  {
+   "t": 13.25,
+   "text": "tu veux\nla plus"
+  },
+  {
+   "t": 13.5,
+   "text": "tu veux   la\nplus bonne"
+  },
+  {
+   "t": 13.75,
+   "text": "tu veux   la\nplus bonne\nouais"
+  },
+  {
+   "t": 14.5,
+   "text": "tu veux   la\nplus bonne\nouais, yeah"
+  },
+  {
+   "t": 15.0,
+   "text": "...",
+   "bg": "white"
+  }
+ ]
+}
