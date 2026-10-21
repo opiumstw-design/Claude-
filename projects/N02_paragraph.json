@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_4.mp4",
+ "start": 0,
+ "end": 10.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-17_15.29.57.mp4",
+   "in": 1.8,
+   "beats": 64
+  }
+ ],
+ "caption": "How dudes be typing back when she sends a paragraph and they only read the first line"
+}

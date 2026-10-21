@@ -1,0 +1,25 @@
+{
+ "audio": "media/sources/Download_7.mp4",
+ "start": 0,
+ "end": 6.4,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-07_20.59.31.mov",
+   "in": 8.0,
+   "beats": 4,
+   "caption": "Teacher: “who wants to read their answer out?”"
+  },
+  {
+   "src": "media/clips/2026-08-26_11.53.32.mov",
+   "in": 0.0,
+   "beats": 64,
+   "caption": "Dudes who copied off bro 5 mins ago:"
+  }
+ ]
+}

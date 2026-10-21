@@ -1,0 +1,22 @@
+{
+ "audio": "media/sources/Download_8.mp4",
+ "start": 0,
+ "end": 8.05,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 1.0,
+   "beats": 64,
+   "y": 0.5
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "Dudes will genuinely say “just take one” and then pose for 45 mins"
+}

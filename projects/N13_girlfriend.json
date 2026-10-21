@@ -1,0 +1,31 @@
+{
+ "audio": "media/sources/Download_7.mp4",
+ "start": 0,
+ "end": 6.5,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-04-24_14.11.58.mp4",
+   "in": 1.0,
+   "beats": 3
+  },
+  {
+   "src": "media/clips/2026-04-20_18.18.28.mp4",
+   "in": 3.0,
+   "beats": 3
+  },
+  {
+   "src": "media/clips/2026-04-20_17.48.11.mp4",
+   "in": 0.5,
+   "beats": 64
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "How dudes be looking at bro when he says he’s got a girlfriend but won’t show us one pic"
+}

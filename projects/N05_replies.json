@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_5.mp4",
+ "start": 0.5,
+ "end": 11.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-05-29_23.27.42.mov",
+   "in": 0.5,
+   "beats": 64
+  }
+ ],
+ "caption": "How dudes be acting nonchalant when she FINALLY replies after 6 hours"
+}

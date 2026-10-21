@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_8.mp4",
+ "start": 0,
+ "end": 5.4,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-11_18.33.47.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ],
+ "caption": "How dudes be on the phone with their mum explaining why the cereal is finished"
+}

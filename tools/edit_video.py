@@ -78,19 +78,7 @@ def text_width(text, font):
 
 
 def wrap(text, font, max_w):
-    """Greedy wrap, then narrow the box as far as the line count allows so lines come out even."""
-    lines = wrap_greedy(text, font, max_w)
-    lo, hi = max_w * 0.4, max_w
-    for _ in range(20):
-        mid = (lo + hi) / 2
-        if len(wrap_greedy(text, font, mid)) > len(lines):
-            lo = mid
-        else:
-            hi = mid
-    return wrap_greedy(text, font, hi)
-
-
-def wrap_greedy(text, font, max_w):
+    """Greedy wrap, like the TikTok text tool (a short last line is normal there)."""
     lines = []
     for para in text.split("\n"):
         cur = ""
@@ -118,7 +106,7 @@ def draw_text(img, xy, text, font, center=False):
     img.paste(Image.new("RGBA", (W, H), (0, 0, 0, 255)), (0, 0), shadow.filter(ImageFilter.GaussianBlur(5)))
     for i, ch in enumerate(text):
         x = x0 + font.getlength(text[:i]) + track * i
-        d.text((x, xy[1]), ch, font=font, fill=(255, 255, 255, 255), stroke_width=3, stroke_fill=(0, 0, 0, 220))
+        d.text((x, xy[1]), ch, font=font, fill=(255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 230))
 
 
 def overlay(spec, shown, caption, W, H):
@@ -129,7 +117,10 @@ def overlay(spec, shown, caption, W, H):
         font = ImageFont.truetype(SEMI, int(W * spec.get("caption_size", 0.058)))
         lines = wrap(caption, font, W * 0.86)
         lh = int(font.size * 1.2)
-        y = int(H * spec.get("caption_y", 0.5)) - lh * len(lines) // 2
+        # Lower third like the account's posts; in the window layout, the lower part of the footage.
+        box = window(spec, W, H)
+        cy = spec.get("caption_y", (box[2] + box[1] * 0.82) / H if box else 0.75)
+        y = int(H * cy) - lh * len(lines) // 2
         for line in lines:
             draw_text(img, (W // 2, y), line, font, center=True)
             y += lh

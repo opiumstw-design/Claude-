@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_7.mp4",
+ "start": 0,
+ "end": 11.2,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-26_18.04.07.mov",
+   "in": 0.3,
+   "beats": 64
+  }
+ ],
+ "caption": "How dudes be when bro starts doing skill moves on FC when he’s already 4-0 up"
+}
