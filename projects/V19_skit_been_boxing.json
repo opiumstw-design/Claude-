@@ -1,7 +1,7 @@
 {
- "audio": "media/sources/Download_4.mp4",
+ "audio": "media/sources/Download_10.mp4",
  "start": 0,
- "end": 8.0,
+ "end": 9.0,
  "size": [
   1080,
   1920
@@ -13,13 +13,13 @@
    "src": "media/clips/2026-07-26_23.00.25.mp4",
    "in": 0.5,
    "beats": 6,
-   "caption": "Dudes after ONE boxing session:"
+   "caption": "Bro: “I’ve been going boxing”"
   },
   {
-   "src": "media/clips/2026-08-26_11.53.32.mov",
+   "src": "media/clips/2026-07-06_16.46.44.mov",
    "in": 0.0,
    "beats": 64,
-   "caption": "Them when someone actually swings back:"
+   "caption": "Him after one round:"
   }
  ]
 }

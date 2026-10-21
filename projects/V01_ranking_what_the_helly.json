@@ -1,0 +1,69 @@
+{
+ "audio": "media/sources/Download_14.mp4",
+ "start": 0,
+ "end": 9.9,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-08_08.10.52.mov",
+   "in": 3.7,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-08-17_15.29.01.mov",
+   "in": 1.0,
+   "beats": 3,
+   "show": [
+    3
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-20_22.16.04.mp4",
+   "in": 6.0,
+   "beats": 3,
+   "show": [
+    5
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-20_22.14.31.mp4",
+   "in": 1.0,
+   "beats": 3,
+   "show": [
+    2
+   ]
+  },
+  {
+   "src": "media/clips/2026-08-26_18.04.07.mov",
+   "in": 2.9,
+   "beats": 3,
+   "show": [
+    4
+   ]
+  },
+  {
+   "src": "media/clips/2026-06-22_13.36.40.mp4",
+   "in": 0.3,
+   "beats": 64,
+   "show": [
+    1
+   ]
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "list_style": "ranking",
+ "title": "RANKING EVERY WHAT THE HELLY",
+ "items": [
+  "WHAT THE HELLEBRON JAMES",
+  "WHAT THE HELLY BERRY",
+  "WHAT THE HELLYONTE",
+  "WHAT THE HELLY BURTON",
+  "WHAT THE HELLHEON"
+ ]
+}

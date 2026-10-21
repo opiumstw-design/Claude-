@@ -1,7 +1,7 @@
 {
- "audio": "media/sources/Download_5.mp4",
- "start": 0.5,
- "end": 8.0,
+ "audio": "media/sources/Download_19.mp4",
+ "start": 0,
+ "end": 9.5,
  "size": [
   1080,
   1920
@@ -11,7 +11,7 @@
  "segments": [
   {
    "src": "media/clips/2026-07-06_16.46.49.mov",
-   "in": 3.0,
+   "in": 2.6,
    "beats": 64,
    "speed": 0.25
   }

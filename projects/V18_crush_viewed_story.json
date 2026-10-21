@@ -1,7 +1,7 @@
 {
- "audio": "media/sources/Download_5.mp4",
- "start": 0.5,
- "end": 11.0,
+ "audio": "media/sources/Download_11.mp4",
+ "start": 0,
+ "end": 10.5,
  "size": [
   1080,
   1920
@@ -15,5 +15,5 @@
    "beats": 64
   }
  ],
- "caption": "How dudes be acting nonchalant when she FINALLY replies after 6 hours"
+ "caption": "How dudes be when they see their crush viewed their story"
 }

@@ -1,0 +1,26 @@
+{
+ "audio": "media/sources/Download_19b.mp4",
+ "start": 0,
+ "end": 10.9,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-06-08_20.01.16.mov",
+   "in": 6.0,
+   "beats": 8
+  },
+  {
+   "src": "media/clips/2026-04-28_16.59.15.mp4",
+   "in": 5.5,
+   "beats": 64
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "When she asks why I never post her but I’m just too nonchalant for all that shii"
+}

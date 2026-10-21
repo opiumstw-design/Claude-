@@ -1,7 +1,7 @@
 {
- "audio": "media/sources/Download_4.mp4",
+ "audio": "media/sources/Download_20.mp4",
  "start": 0,
- "end": 10.0,
+ "end": 9.7,
  "size": [
   1080,
   1920
@@ -15,5 +15,5 @@
    "beats": 64
   }
  ],
- "caption": "How dudes be typing back when she sends a paragraph and they only read the first line"
+ "caption": "How dudes be typing when they’re losing an argument in the group chat"
 }

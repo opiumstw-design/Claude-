@@ -1,0 +1,69 @@
+{
+ "audio": "media/sources/Download_24.mp4",
+ "start": 0,
+ "end": 10.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.29.34.mov",
+   "in": 0.3,
+   "beats": 3
+  },
+  {
+   "src": "media/clips/2026-07-08_00.06.44.mov",
+   "in": 1.0,
+   "beats": 4,
+   "show": [
+    3
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-24_14.11.58.mp4",
+   "in": 1.0,
+   "beats": 4,
+   "show": [
+    5
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-20_18.18.28.mp4",
+   "in": 3.0,
+   "beats": 4,
+   "show": [
+    2
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-20_17.48.11.mp4",
+   "in": 0.5,
+   "beats": 4,
+   "show": [
+    4
+   ]
+  },
+  {
+   "src": "media/clips/2026-08-26_11.53.32.mov",
+   "in": 0.0,
+   "beats": 64,
+   "show": [
+    1
+   ]
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "list_style": "ranking",
+ "title": "RANKING EVERY TYPE OF “NAH”",
+ "items": [
+  "NAH I’D WIN",
+  "NAH THAT’S CRAZY",
+  "NAHHHHHH",
+  "NAH BRUV",
+  "NAH FR"
+ ]
+}

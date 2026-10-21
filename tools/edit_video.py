@@ -126,22 +126,47 @@ def overlay(spec, shown, caption, W, H):
             y += lh
         return img
 
-    tfont = ImageFont.truetype(BOLD, int(W * 0.062))
-    y = int(H * 0.155)
-    for line in wrap(spec["title"].upper(), tfont, W * 0.86):
-        draw_text(img, (W // 2, y), line, tfont, center=True)
-        y += int(tfont.size * 1.18)
-    lfont = ImageFont.truetype(SEMI, int(W * 0.05))
+    # Lists sit on the footage window (one size for every clip), laid out like the references:
+    # "top5" = title at the top of the footage, every line centred (Download_13);
+    # "ranking" = title in the bar above, big numbers down the left, entries fill in (Download_14).
+    bw, bh, top = window(spec, W, H) or (W, H, 0)
     items = spec["items"]
-    num_w = text_width(f"{len(items)}.  ", lfont)
-    block_w = num_w + max(text_width(t, lfont) for t in items)
-    x = int((W - min(block_w, W * 0.9)) / 2)
-    y += int(H * 0.03)
+    ranking = spec.get("list_style", "top5") == "ranking"
+    tfont = ImageFont.truetype(BOLD if ranking else SEMI, int(W * (0.068 if ranking else 0.066)))
+    tlines = wrap(spec["title"].upper(), tfont, W * 0.86)
+    tlh = int(tfont.size * 1.15)
+    if ranking:
+        y = top - int(H * 0.012) - tlh * len(tlines) if top else int(H * 0.155)
+        for line in tlines:
+            draw_text(img, (W // 2, y), line, tfont, center=True)
+            y += tlh
+        nfont = ImageFont.truetype(BOLD, int(W * 0.075))
+        efont = ImageFont.truetype(SEMI, int(W * 0.052))
+        x_num, x_ent = int(W * 0.06), int(W * 0.17)
+        step = bh * 0.098
+        for i, item in enumerate(items):
+            cy = top + bh * 0.30 + step * i
+            draw_text(img, (x_num, int(cy - nfont.size * 0.55)), f"{i + 1}.", nfont)
+            if i + 1 in shown:
+                lines = wrap(item.upper(), efont, W * 0.76)
+                lh = int(efont.size * 1.12)
+                ey = int(cy - efont.size * 0.5) - lh * (len(lines) - 1)
+                for line in lines:
+                    draw_text(img, (x_ent, ey), line, efont)
+                    ey += lh
+        return img
+
+    y = top + int(H * 0.012) if top else int(H * 0.155)
+    for line in tlines:
+        draw_text(img, (W // 2, y), line, tfont, center=True)
+        y += tlh
+    lfont = ImageFont.truetype(SEMI, int(W * 0.058))
+    step = (bh * 0.93 - (y - top)) / max(len(items), 1) if top else lfont.size * 1.7
+    y += int(lfont.size * 0.6)
     for i, item in enumerate(items):
-        draw_text(img, (x, y), f"{i + 1}.", lfont)
-        if i + 1 in shown:
-            draw_text(img, (x + int(num_w), y), item, lfont)
-        y += int(lfont.size * 1.55)
+        if i + 1 in shown or spec.get("show_all", True):
+            draw_text(img, (W // 2, int(y)), f"{i + 1}. {item}", lfont, center=True)
+        y += step
     return img
 
 

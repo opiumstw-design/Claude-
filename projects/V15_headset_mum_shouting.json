@@ -1,7 +1,7 @@
 {
- "audio": "media/sources/Download_4.mp4",
+ "audio": "media/sources/Download_21.mp4",
  "start": 0,
- "end": 9.0,
+ "end": 9.5,
  "size": [
   1080,
   1920
@@ -11,12 +11,12 @@
  "segments": [
   {
    "src": "media/clips/2026-05-10_21.16.32.mov",
-   "in": 1.0,
+   "in": 0.5,
    "beats": 64,
    "vf": "transpose=2"
   }
  ],
  "layout": "window",
  "window_ratio": 1.0,
- "caption": "How dudes be after their mum says “last game” and it’s been 4 hours"
+ "caption": "How dudes be when they hear their mum shout their name with the headset on"
 }

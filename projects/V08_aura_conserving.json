@@ -1,0 +1,26 @@
+{
+ "audio": "media/sources/Download_17b.mp4",
+ "start": 0,
+ "end": 12.5,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-07_20.59.31.mov",
+   "in": 4.0,
+   "beats": 8
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 0.3,
+   "beats": 64
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "how I feel when someone says “why you so quiet” when I’m just conserving my aura"
+}

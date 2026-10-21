@@ -1,0 +1,64 @@
+{
+ "audio": "media/sources/Download_13.mp4",
+ "start": 0,
+ "end": 14.4,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 0.3,
+   "beats": 3
+  },
+  {
+   "src": "media/clips/2026-04-28_16.59.15.mp4",
+   "in": 9.5,
+   "beats": 3
+  },
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 6.0,
+   "beats": 3
+  },
+  {
+   "src": "media/clips/2026-04-20_18.03.44.mp4",
+   "in": 5.0,
+   "beats": 3
+  },
+  {
+   "src": "media/clips/2026-07-06_16.46.42.mov",
+   "in": 0.0,
+   "beats": 3
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.34.mov",
+   "in": 0.3,
+   "beats": 3
+  },
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 6.0,
+   "beats": 3
+  },
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 12.0,
+   "beats": 64
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "list_style": "top5",
+ "title": "TOP 5 WAYS TO BE EVEN MORE NONCHALANT",
+ "items": [
+  "walk past the fight",
+  "reply “mhm” to everything",
+  "keep 2% battery on purpose",
+  "one airpod in at the function",
+  "dont clap when the plane lands"
+ ]
+}

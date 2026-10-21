@@ -1,0 +1,25 @@
+{
+ "audio": "media/sources/Download_12.mp4",
+ "start": 0,
+ "end": 9.1,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 0.3,
+   "beats": 8,
+   "caption": "Me at 11pm: “I’m going gym at 6am”"
+  },
+  {
+   "src": "media/clips/2026-10-03_08.09.53.mov",
+   "in": 0.5,
+   "beats": 64,
+   "caption": "Me at 6am:"
+  }
+ ]
+}

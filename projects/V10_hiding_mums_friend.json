@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_22.mp4",
+ "start": 0,
+ "end": 10.1,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-06-08_20.01.16.mov",
+   "in": 1.0,
+   "beats": 64
+  }
+ ],
+ "caption": "How dudes be hiding when their mum’s friend walks past them in the park"
+}

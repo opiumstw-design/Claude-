@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_25.mp4",
+ "start": 0,
+ "end": 7.6,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.58.44.mp4",
+   "in": 5.0,
+   "beats": 64
+  }
+ ],
+ "caption": "How dudes be when the teacher says “you can leave once you’ve finished”"
+}

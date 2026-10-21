@@ -1,0 +1,31 @@
+{
+ "audio": "media/sources/Download_18b.mp4",
+ "start": 0,
+ "end": 12.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 6.0,
+   "beats": 6
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.34.mov",
+   "in": 0.3,
+   "beats": 6
+  },
+  {
+   "src": "media/clips/2026-04-28_16.59.15.mp4",
+   "in": 10.0,
+   "beats": 64
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "how it felt walking into school after getting a fresh trim on some nonchalant shi:"
+}

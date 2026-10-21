@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_28.mp4",
+ "start": 0,
+ "end": 8.3,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-04-24_13.49.27.mp4",
+   "in": 5.0,
+   "beats": 64
+  }
+ ],
+ "caption": "Dudes will genuinely do 40 crossovers on an empty street like someone’s guarding them"
+}

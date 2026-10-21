@@ -1,0 +1,26 @@
+{
+ "audio": "media/sources/Download_20b.mp4",
+ "start": 0,
+ "end": 11.2,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 0.3,
+   "beats": 8
+  },
+  {
+   "src": "media/clips/2026-04-28_16.59.15.mp4",
+   "in": 9.5,
+   "beats": 64
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "When the teacher lets you leave 5 mins early so you walk out on sum nonchalant shii"
+}
