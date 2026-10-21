@@ -13,11 +13,12 @@
   {
    "src": "media/clips/2026-10-17_18.29.34.mov",
    "in": 0.3,
-   "beats": 4
+   "beats": 4,
+   "y": 0.22
   },
   {
    "continue": true,
-   "beats": 64,
+   "beats": 4,
    "skip": 0.3
   },
   {
