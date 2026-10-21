@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_4.mp4",
+ "end": 10.4,
+ "caption": "when ur on facetime at 3am and have to whisper cause ur mum is a light sleeper",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-03_08.09.53.mov",
+   "in": 0.5,
+   "beats": 64
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}

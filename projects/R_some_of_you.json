@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_7.mp4",
+ "end": 6.6,
+ "caption": "when the teacher says \"some of you\" and doesnt say names",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-08_00.06.44.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}

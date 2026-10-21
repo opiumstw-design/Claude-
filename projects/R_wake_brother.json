@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_8.mp4",
+ "end": 8.05,
+ "caption": "me trying to wake my brother up for school after his 6th alarm",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-14_15.51.55.mov",
+   "in": 1.2,
+   "beats": 64
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}

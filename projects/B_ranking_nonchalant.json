@@ -1,7 +1,7 @@
 {
  "audio": "media/sources/Download_4.mp4",
  "end": 11.8,
- "transition": "white",
+ "transition": "mix",
  "title": "ranking every type of nonchalant",
  "items": [
   "THE WALK AWAY",
@@ -14,8 +14,7 @@
   {
    "src": "media/clips/2026-04-24_14.11.58.mp4",
    "in": 1.0,
-   "beats": 2,
-   "x": 0.62
+   "beats": 2
   },
   {
    "src": "media/clips/2026-07-08_00.06.44.mov",
@@ -23,7 +22,8 @@
    "beats": 2,
    "show": [
     3
-   ]
+   ],
+   "transition": "white"
   },
   {
    "src": "media/clips/2026-05-29_23.27.42.mov",
@@ -37,7 +37,6 @@
    "src": "media/clips/2026-04-20_18.18.28.mp4",
    "in": 4,
    "beats": 2,
-   "x": 0.38,
    "show": [
     2
    ]
@@ -46,7 +45,6 @@
    "src": "media/clips/2026-04-20_17.48.11.mp4",
    "in": 2.0,
    "beats": 2,
-   "x": 0.5,
    "show": [
     4
    ]

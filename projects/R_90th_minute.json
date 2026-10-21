@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_7.mp4",
+ "end": 11.2,
+ "caption": "when ur team concedes in the 90th minute and u got money on it",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-26_18.04.07.mov",
+   "in": 0.3,
+   "beats": 64
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}

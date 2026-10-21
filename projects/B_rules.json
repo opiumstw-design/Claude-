@@ -1,7 +1,7 @@
 {
  "audio": "media/sources/Download_8.mp4",
  "end": 8.05,
- "transition": "white",
+ "transition": "mix",
  "title": "nonchalant rules",
  "items": [
   "hood up",
@@ -22,14 +22,14 @@
    "beats": 1,
    "show": [
     1
-   ]
+   ],
+   "transition": "white"
   },
   {
    "src": "media/clips/2026-05-10_21.16.32.mov",
    "in": 3,
    "beats": 1,
    "vf": "transpose=2",
-   "x": 0.55,
    "show": [
     2
    ]
@@ -46,7 +46,6 @@
    "src": "media/clips/2026-04-20_17.48.11.mp4",
    "in": 2.5,
    "beats": 1,
-   "x": 0.5,
    "show": [
     4
    ]

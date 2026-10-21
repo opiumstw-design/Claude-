@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_8.mp4",
+ "end": 5.4,
+ "caption": "when u call ur mum to pick u up and she starts asking 21 questions",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-11_18.33.47.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}

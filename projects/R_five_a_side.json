@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_4.mp4",
+ "end": 7.0,
+ "caption": "me after one sprint at 5 a side cause i skipped every warm up",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-06_16.46.42.mov",
+   "in": 0.0,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-07-06_16.46.44.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}
