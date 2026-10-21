@@ -1,0 +1,69 @@
+{
+ "audio": "media/sources/Download_8.mp4",
+ "end": 8.05,
+ "transition": "white",
+ "title": "nonchalant rules",
+ "items": [
+  "hood up",
+  "dnd on 24/7",
+  "never run",
+  "never explain",
+  "stay lowk"
+ ],
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 1,
+   "beats": 1
+  },
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 7,
+   "beats": 1,
+   "show": [
+    1
+   ]
+  },
+  {
+   "src": "media/clips/2026-05-10_21.16.32.mov",
+   "in": 3,
+   "beats": 1,
+   "vf": "transpose=2",
+   "x": 0.55,
+   "show": [
+    2
+   ]
+  },
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 1,
+   "beats": 1,
+   "show": [
+    3
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-20_17.48.11.mp4",
+   "in": 2.5,
+   "beats": 1,
+   "x": 0.5,
+   "show": [
+    4
+   ]
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.34.mov",
+   "in": 0.3,
+   "beats": 6,
+   "show": [
+    5
+   ]
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30
+}

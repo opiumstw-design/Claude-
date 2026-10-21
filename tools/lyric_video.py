@@ -28,7 +28,7 @@ import sys
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
+FONT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts", "TikTokSans_500Medium.ttf")
 # Font size as a fraction of frame width, by line count: fewer lines = bigger.
 SIZE_BY_LINES = {1: 0.125, 2: 0.092, 3: 0.074, 4: 0.062}
 MAX_BLOCK_W = 0.78

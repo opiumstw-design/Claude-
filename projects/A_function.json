@@ -1,0 +1,66 @@
+{
+ "audio": "media/sources/Download_6.mp4",
+ "end": 15.3,
+ "transition": "white",
+ "caption": "when the whole function turnt but u just standing there keeping ur aura intact",
+ "segments": [
+  {
+   "src": "media/clips/2026-04-20_22.14.31.mp4",
+   "in": 0.3,
+   "beats": 4
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.34.mov",
+   "in": 0.3,
+   "beats": 4
+  },
+  {
+   "src": "media/clips/2026-04-20_22.16.04.mp4",
+   "in": 6,
+   "beats": 4
+  },
+  {
+   "src": "media/clips/2026-04-20_18.18.28.mp4",
+   "in": 3,
+   "beats": 4,
+   "x": 0.38
+  },
+  {
+   "src": "media/clips/2026-04-20_22.14.31.mp4",
+   "in": 3.5,
+   "beats": 4
+  },
+  {
+   "src": "media/clips/2026-04-24_14.11.58.mp4",
+   "in": 1.2,
+   "beats": 4,
+   "x": 0.62
+  },
+  {
+   "src": "media/clips/2026-04-20_22.16.04.mp4",
+   "in": 14,
+   "beats": 4
+  },
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 4,
+   "beats": 4
+  },
+  {
+   "src": "media/clips/2026-04-20_22.14.31.mp4",
+   "in": 4.8,
+   "beats": 4
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 1,
+   "beats": 8
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30
+}

@@ -1,0 +1,34 @@
+{
+ "audio": "media/sources/Download_8.mp4",
+ "end": 8.05,
+ "transition": "mix",
+ "caption": "me after leaving them on delivered for 3 days",
+ "segments": [
+  {
+   "src": "media/clips/2026-05-29_23.27.42.mov",
+   "in": 6.5,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 1,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-04-28_16.59.15.mp4",
+   "in": 5.5,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 1,
+   "beats": 6
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30
+}

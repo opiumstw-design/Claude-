@@ -1,0 +1,56 @@
+{
+ "audio": "media/sources/Download_7.mp4",
+ "end": 11.5,
+ "transition": "white",
+ "caption": "when ur genuinely chilling and some lame talm bout \"why u so quiet\"",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-07_20.59.31.mov",
+   "in": 4,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.34.mov",
+   "in": 0.3,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-04-20_17.48.11.mp4",
+   "in": 0.5,
+   "beats": 2,
+   "x": 0.5
+  },
+  {
+   "src": "media/clips/2026-08-17_15.29.01.mov",
+   "in": 1,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-07-08_00.06.44.mov",
+   "in": 2,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-04-20_18.18.28.mp4",
+   "in": 6,
+   "beats": 2,
+   "x": 0.38
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 3,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-04-28_16.59.15.mp4",
+   "in": 5.5,
+   "beats": 4
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30
+}

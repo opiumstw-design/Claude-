@@ -1,0 +1,74 @@
+{
+ "audio": "media/sources/Download_7.mp4",
+ "end": 11.5,
+ "transition": "white",
+ "title": "signs ur lowk nonchalant",
+ "items": [
+  "u reply \"k\" to paragraphs",
+  "u dont even check who viewed",
+  "no celly when u score",
+  "u stay seated at the function",
+  "ur not even reading this"
+ ],
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.29.34.mov",
+   "in": 0.3,
+   "beats": 2
+  },
+  {
+   "src": "media/clips/2026-08-17_15.29.57.mp4",
+   "in": 3,
+   "beats": 2,
+   "show": [
+    1
+   ]
+  },
+  {
+   "src": "media/clips/2026-05-29_23.27.42.mov",
+   "in": 1,
+   "beats": 2,
+   "show": [
+    2
+   ]
+  },
+  {
+   "src": "media/clips/2026-07-06_16.46.49.mov",
+   "in": 4.3,
+   "beats": 2,
+   "speed": 0.25,
+   "show": [
+    3
+   ]
+  },
+  {
+   "src": "media/clips/2026-07-07_20.59.31.mov",
+   "in": 4,
+   "beats": 2,
+   "show": [
+    4
+   ]
+  },
+  {
+   "src": "media/clips/2026-04-20_18.18.28.mp4",
+   "in": 8,
+   "beats": 3,
+   "x": 0.38,
+   "show": [
+    5
+   ]
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 1,
+   "beats": 4,
+   "transition": "mix"
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30
+}
