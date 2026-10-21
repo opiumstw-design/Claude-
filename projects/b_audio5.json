@@ -1,0 +1,88 @@
+{
+ "audio": "media/sources/Download_5.mp4",
+ "end": 30.1,
+ "cut_every": 4,
+ "title": "top 5 ways to keep your aura",
+ "items": [
+  "never reply first",
+  "leave them on delivered",
+  "walk slow everywhere",
+  "stay off the timeline",
+  "let them wonder"
+ ],
+ "reveal": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "clips": [
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 1.0
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 1.0
+  },
+  {
+   "src": "media/clips/2026-04-24_13.49.27.mp4",
+   "in": 3.0
+  },
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 4.0
+  },
+  {
+   "src": "media/clips/2026-07-08_00.06.44.mov",
+   "in": 2.0
+  },
+  {
+   "src": "media/clips/2026-07-06_16.46.49.mov",
+   "in": 2.0
+  },
+  {
+   "src": "media/clips/2026-04-28_16.59.15.mp4",
+   "in": 1.0
+  },
+  {
+   "src": "media/clips/2026-07-07_20.59.31.mov",
+   "in": 3.0
+  },
+  {
+   "src": "media/clips/2026-10-03_08.09.53.mov",
+   "in": 2.0
+  },
+  {
+   "src": "media/clips/2026-07-06_16.46.42.mov",
+   "in": 1.0
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.34.mov",
+   "in": 4.0
+  },
+  {
+   "src": "media/clips/2026-07-11_18.33.47.mov",
+   "in": 3.0
+  },
+  {
+   "src": "media/clips/2026-06-14_19.41.25.mov",
+   "in": 2.4
+  },
+  {
+   "src": "media/clips/2026-08-26_18.04.07.mov",
+   "in": 1.0
+  },
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 10.0
+  }
+ ],
+ "start": 0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30
+}
