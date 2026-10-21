@@ -23,6 +23,8 @@ ranking uses "title" + "items". Each segment is one clip, a whole number of beat
 }
 A segment "caption" (skits: "teacher: ..." then "me:") replaces the caption from that
 segment on, until another segment sets one.
+{"continue": true, "beats": 4, "skip": 0.5} carries on with the previous segment's clip,
+0.5 s after where it was cut, so a beat mix jumps the same clip forward.
 Clips are never zoomed: one that is already about 9:16 fills the frame, anything wider
 (landscape, square) is letterboxed in black at full width. "fit": "cover" | "bars" forces
 one or the other, and "x"/"y" (0..1) move the crop of a "cover" clip. "speed" < 1 is slow
@@ -233,6 +235,17 @@ def main(spec_path, out_path):
     pre = [0] + [x - (x // 2 or 1) for x in d[1:]]
     post = [(d[k + 1] // 2 or 1) if k + 1 < len(segs) else 0 for k in range(len(segs))]
     flash = spec.get("flash", 0.8)
+
+    # "continue": true picks the clip up where the previous segment's visible part ended, plus
+    # "skip" seconds, so a mix on the beat jumps the same clip forward.
+    for k, s in enumerate(segs):
+        if s.get("continue") and k:
+            prev = segs[k - 1]
+            s.setdefault("src", prev["src"])
+            for key in ("vf", "speed", "x", "y", "fit"):
+                if key in prev:
+                    s.setdefault(key, prev[key])
+            s["in"] = prev["in"] + (cuts[k] - cuts[k - 1]) / fps * prev.get("speed", 1.0) + s.get("skip", 0.5)
 
     tmp = tempfile.mkdtemp(prefix="edit_")
     seg_paths = []

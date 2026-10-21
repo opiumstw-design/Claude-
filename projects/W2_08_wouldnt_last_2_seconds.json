@@ -1,0 +1,39 @@
+{
+ "audio": "media/sources/Download_5.mp4",
+ "start": 12.5,
+ "end": 22.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be when bro says “you wouldn’t last 2 seconds in a fight”",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-26_23.00.25.mp4",
+   "in": 0.3,
+   "beats": 4
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.4
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.4
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.4
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.4
+  }
+ ]
+}

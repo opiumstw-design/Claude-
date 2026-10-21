@@ -1,0 +1,39 @@
+{
+ "audio": "media/sources/Download_22.mp4",
+ "start": 0,
+ "end": 10.1,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be playing hide and seek at 17 like their life depends on it",
+ "segments": [
+  {
+   "src": "media/clips/2026-06-08_20.01.16.mov",
+   "in": 1.0,
+   "beats": 6
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 0.4
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 0.4
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 0.4
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.4
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "audio": "media/sources/Download_23.mp4",
+ "start": 0,
+ "end": 7.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "Dudes will genuinely do 4 push ups and go check the mirror",
+ "segments": [
+  {
+   "src": "media/clips/2026-05-10_16.21.30.mov",
+   "in": 0.0,
+   "beats": 4
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.3
+  },
+  {
+   "src": "media/clips/2026-07-25_19.47.36.mp4",
+   "in": 7.3,
+   "beats": 64,
+   "transition": "white"
+  }
+ ]
+}

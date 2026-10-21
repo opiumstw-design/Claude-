@@ -1,0 +1,33 @@
+{
+ "audio": "media/sources/Download_16.mp4",
+ "start": 0,
+ "end": 6.2,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be when their mate falls over in front of the whole school",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-02_10.52.00.mov",
+   "in": 0.0,
+   "beats": 4,
+   "y": 0.0
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.8
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.8
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 2.0,
+ "caption_y": 0.29
+}

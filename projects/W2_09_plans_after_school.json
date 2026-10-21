@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_26.mp4",
+ "start": 0,
+ "end": 6.4,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be when someone asks “so what are your plans after school”",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-08_08.10.52.mov",
+   "in": 1.0,
+   "beats": 5
+  },
+  {
+   "src": "media/clips/2026-08-26_11.53.32.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ]
+}

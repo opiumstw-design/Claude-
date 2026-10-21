@@ -1,0 +1,45 @@
+{
+ "audio": "media/sources/Download_5.mp4",
+ "start": 0.5,
+ "end": 12.5,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be when their team needs one goal and it’s the 89th minute",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-12_17.25.01.mov",
+   "in": 18.0,
+   "beats": 4,
+   "y": 0.0
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 1.5
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 1.5
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 1.5
+  },
+  {
+   "src": "media/clips/2026-08-15_11.37.17.mov",
+   "in": 2.5,
+   "beats": 64,
+   "y": 0.42,
+   "transition": "white"
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 2.0,
+ "caption_y": 0.29
+}

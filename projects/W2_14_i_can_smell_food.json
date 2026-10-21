@@ -1,0 +1,29 @@
+{
+ "audio": "media/sources/Download_27.mp4",
+ "start": 0,
+ "end": 6.6,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be looking around after the teacher says “I can smell food”",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-08_00.06.44.mov",
+   "in": 0.0,
+   "beats": 3
+  },
+  {
+   "continue": true,
+   "beats": 3,
+   "skip": 0.2
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.2
+  }
+ ]
+}

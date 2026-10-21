@@ -1,0 +1,30 @@
+{
+ "audio": "media/sources/Download_17.mp4",
+ "start": 0,
+ "end": 10.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be when their side of the bet comes in",
+ "segments": [
+  {
+   "src": "media/clips/2026-05-29_23.27.42.mov",
+   "in": 2.0,
+   "beats": 6
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 2.0
+  },
+  {
+   "src": "media/clips/2026-04-20_22.16.04.mp4",
+   "in": 2.0,
+   "beats": 64,
+   "transition": "white"
+  }
+ ]
+}

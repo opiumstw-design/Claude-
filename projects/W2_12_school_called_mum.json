@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_26.mp4",
+ "start": 0,
+ "end": 5.4,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be on the phone when their mum asks why the school called",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-11_18.33.47.mov",
+   "in": 0.0,
+   "beats": 5
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.3
+  }
+ ]
+}

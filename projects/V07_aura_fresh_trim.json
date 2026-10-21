@@ -12,12 +12,14 @@
   {
    "src": "media/clips/2026-10-17_18.30.20.mov",
    "in": 6.0,
-   "beats": 6
+   "beats": 6,
+   "y": 0.3
   },
   {
    "src": "media/clips/2026-10-17_18.29.34.mov",
    "in": 0.3,
-   "beats": 6
+   "beats": 6,
+   "y": 0.22
   },
   {
    "src": "media/clips/2026-04-28_16.59.15.mp4",

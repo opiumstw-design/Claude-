@@ -1,0 +1,39 @@
+{
+ "audio": "media/sources/Download_6.mp4",
+ "start": 0,
+ "end": 10.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be warming up outside like scouts are watching",
+ "segments": [
+  {
+   "src": "media/clips/2026-04-24_13.49.27.mp4",
+   "in": 1.0,
+   "beats": 6
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 1.5
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 1.5
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 1.5
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 1.5
+  }
+ ]
+}

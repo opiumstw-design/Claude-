@@ -1,0 +1,39 @@
+{
+ "audio": "media/sources/Download_19.mp4",
+ "start": 0,
+ "end": 9.5,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be when the beat drops in their head during the exam",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-17_15.29.01.mov",
+   "in": 0.3,
+   "beats": 6
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 0.3
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 0.3
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 0.3
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.3
+  }
+ ]
+}

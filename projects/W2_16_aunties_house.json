@@ -1,0 +1,39 @@
+{
+ "audio": "media/sources/Download_24.mp4",
+ "start": 0,
+ "end": 10.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be at their aunty’s house waiting for their mum to finish talking",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-07_20.59.31.mov",
+   "in": 2.0,
+   "beats": 5
+  },
+  {
+   "continue": true,
+   "beats": 5,
+   "skip": 1.0
+  },
+  {
+   "continue": true,
+   "beats": 5,
+   "skip": 1.0
+  },
+  {
+   "continue": true,
+   "beats": 5,
+   "skip": 1.0
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 1.0
+  }
+ ]
+}

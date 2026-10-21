@@ -1,0 +1,34 @@
+{
+ "audio": "media/sources/Download_20.mp4",
+ "start": 0,
+ "end": 9.7,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be typing “haha” with no emotion on their face",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-17_15.29.57.mp4",
+   "in": 1.8,
+   "beats": 4
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.4
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.4
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.4
+  }
+ ]
+}

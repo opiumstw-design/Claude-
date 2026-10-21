@@ -1,0 +1,39 @@
+{
+ "audio": "media/sources/Download_12.mp4",
+ "start": 0,
+ "end": 9.1,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be explaining why they got a detention like it wasn’t their fault",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-08_08.10.52.mov",
+   "in": 4.5,
+   "beats": 4
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.6
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.6
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.6
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.6
+  }
+ ]
+}

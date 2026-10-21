@@ -1,0 +1,35 @@
+{
+ "audio": "media/sources/Download_25.mp4",
+ "start": 0,
+ "end": 10.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How dudes be when the DJ finally plays their song",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.58.44.mp4",
+   "in": 3.5,
+   "beats": 5
+  },
+  {
+   "continue": true,
+   "beats": 5,
+   "skip": 1.0
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 1.0
+  },
+  {
+   "src": "media/clips/2026-04-20_22.14.31.mp4",
+   "in": 0.5,
+   "beats": 64,
+   "transition": "white"
+  }
+ ]
+}
