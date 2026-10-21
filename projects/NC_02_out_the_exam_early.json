@@ -1,0 +1,29 @@
+{
+ "audio": "media/sources/Download_13c.mp4",
+ "start": 0,
+ "end": 7.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How I feel walking out the exam 20 mins early on some nonchalant shi",
+ "segments": [
+  {
+   "src": "media/clips/2026-06-08_20.01.16.mov",
+   "in": 6.0,
+   "beats": 6,
+   "y": 0.4
+  },
+  {
+   "src": "media/clips/2026-07-17_18.58.44.mp4",
+   "in": 10.6,
+   "beats": 64,
+   "y": 0.4,
+   "transition": "white"
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}

@@ -13,16 +13,11 @@
   {
    "src": "media/clips/2026-10-03_08.09.53.mov",
    "in": 0.5,
-   "beats": 6
+   "beats": 8
   },
   {
    "continue": true,
-   "beats": 6,
-   "skip": 0.5
-  },
-  {
-   "continue": true,
-   "beats": 6,
+   "beats": 8,
    "skip": 0.5
   },
   {

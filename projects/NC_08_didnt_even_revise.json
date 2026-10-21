@@ -1,0 +1,33 @@
+{
+ "audio": "media/sources/Download_18b.mp4",
+ "start": 0,
+ "end": 12.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "When the whole class is panicking about the test but I didn’t even revise on some nonchalant shi",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.29.34.mov",
+   "in": 0.3,
+   "beats": 4
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.3
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 0.3,
+   "beats": 64,
+   "y": 0.32,
+   "transition": "white"
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}

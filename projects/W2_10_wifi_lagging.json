@@ -8,21 +8,16 @@
  ],
  "fps": 30,
  "transition": "mix",
- "caption": "How dudes be when they hear their mum coming up the stairs mid game",
+ "caption": "How dudes be when the wifi starts lagging in the last minute of the game",
  "segments": [
   {
    "src": "media/clips/2026-08-26_18.04.07.mov",
    "in": 0.3,
-   "beats": 4
+   "beats": 5
   },
   {
    "continue": true,
-   "beats": 4,
-   "skip": 0.7
-  },
-  {
-   "continue": true,
-   "beats": 4,
+   "beats": 5,
    "skip": 0.7
   },
   {

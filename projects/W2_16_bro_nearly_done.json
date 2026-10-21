@@ -8,26 +8,16 @@
  ],
  "fps": 30,
  "transition": "mix",
- "caption": "How dudes be at their aunty’s house waiting for their mum to finish talking",
+ "caption": "How dudes be waiting for bro to get ready when he said he was “nearly done” an hour ago",
  "segments": [
   {
    "src": "media/clips/2026-07-07_20.59.31.mov",
    "in": 2.0,
-   "beats": 5
+   "beats": 8
   },
   {
    "continue": true,
-   "beats": 5,
-   "skip": 1.0
-  },
-  {
-   "continue": true,
-   "beats": 5,
-   "skip": 1.0
-  },
-  {
-   "continue": true,
-   "beats": 5,
+   "beats": 8,
    "skip": 1.0
   },
   {

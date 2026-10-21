@@ -13,21 +13,11 @@
   {
    "src": "media/clips/2026-06-08_20.01.16.mov",
    "in": 1.0,
-   "beats": 6
+   "beats": 10
   },
   {
    "continue": true,
-   "beats": 6,
-   "skip": 0.4
-  },
-  {
-   "continue": true,
-   "beats": 6,
-   "skip": 0.4
-  },
-  {
-   "continue": true,
-   "beats": 6,
+   "beats": 10,
    "skip": 0.4
   },
   {

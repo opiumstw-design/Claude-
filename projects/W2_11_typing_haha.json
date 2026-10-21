@@ -13,16 +13,11 @@
   {
    "src": "media/clips/2026-08-17_15.29.57.mp4",
    "in": 1.8,
-   "beats": 4
+   "beats": 5
   },
   {
    "continue": true,
-   "beats": 4,
-   "skip": 0.4
-  },
-  {
-   "continue": true,
-   "beats": 4,
+   "beats": 5,
    "skip": 0.4
   },
   {

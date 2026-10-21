@@ -27,11 +27,6 @@
   },
   {
    "continue": true,
-   "beats": 4,
-   "skip": 0.6
-  },
-  {
-   "continue": true,
    "beats": 64,
    "skip": 0.6
   }

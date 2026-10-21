@@ -13,21 +13,11 @@
   {
    "src": "media/clips/2026-04-24_13.49.27.mp4",
    "in": 1.0,
-   "beats": 6
+   "beats": 9
   },
   {
    "continue": true,
-   "beats": 6,
-   "skip": 1.5
-  },
-  {
-   "continue": true,
-   "beats": 6,
-   "skip": 1.5
-  },
-  {
-   "continue": true,
-   "beats": 6,
+   "beats": 9,
    "skip": 1.5
   },
   {

@@ -8,12 +8,12 @@
  ],
  "fps": 30,
  "transition": "mix",
- "caption": "How dudes be on the phone when their mum asks why the school called",
+ "caption": "How dudes be on the phone when bro says he’s “5 mins away” for the 3rd time",
  "segments": [
   {
    "src": "media/clips/2026-07-11_18.33.47.mov",
    "in": 0.0,
-   "beats": 5
+   "beats": 4
   },
   {
    "continue": true,

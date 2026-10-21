@@ -1,0 +1,44 @@
+{
+ "audio": "media/sources/Download_14c.mp4",
+ "start": 0,
+ "end": 12.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "If you’re ever feeling down just remember the most nonchalant guy in the year lives in your area (me)",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-25_19.47.36.mp4",
+   "in": 0.5,
+   "beats": 4
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.5
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.5
+  },
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 0.3,
+   "beats": 8,
+   "y": 0.32,
+   "transition": "white"
+  },
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 6.0,
+   "beats": 64,
+   "y": 0.3
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}

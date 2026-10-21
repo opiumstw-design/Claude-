@@ -13,21 +13,11 @@
   {
    "src": "media/clips/2026-08-17_15.29.01.mov",
    "in": 0.3,
-   "beats": 6
+   "beats": 9
   },
   {
    "continue": true,
-   "beats": 6,
-   "skip": 0.3
-  },
-  {
-   "continue": true,
-   "beats": 6,
-   "skip": 0.3
-  },
-  {
-   "continue": true,
-   "beats": 6,
+   "beats": 9,
    "skip": 0.3
   },
   {

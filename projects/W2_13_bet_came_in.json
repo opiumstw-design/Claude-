@@ -13,11 +13,16 @@
   {
    "src": "media/clips/2026-05-29_23.27.42.mov",
    "in": 2.0,
-   "beats": 6
+   "beats": 4
   },
   {
    "continue": true,
-   "beats": 6,
+   "beats": 4,
+   "skip": 2.0
+  },
+  {
+   "continue": true,
+   "beats": 4,
    "skip": 2.0
   },
   {

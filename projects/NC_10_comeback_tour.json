@@ -1,0 +1,35 @@
+{
+ "audio": "media/sources/Download_20b.mp4",
+ "start": 0,
+ "end": 11.2,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "When you ain’t been in school for a week so you walk in like it’s a comeback tour",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-06_16.46.49.mov",
+   "in": 2.6,
+   "beats": 8,
+   "speed": 0.25
+  },
+  {
+   "src": "media/clips/2026-04-28_16.59.15.mp4",
+   "in": 9.5,
+   "beats": 6,
+   "y": 0.4,
+   "transition": "white"
+  },
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 6.0,
+   "beats": 64,
+   "y": 0.45
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}

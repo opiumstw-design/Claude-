@@ -13,12 +13,7 @@
   {
    "src": "media/clips/2026-07-08_00.06.44.mov",
    "in": 0.0,
-   "beats": 3
-  },
-  {
-   "continue": true,
-   "beats": 3,
-   "skip": 0.2
+   "beats": 4
   },
   {
    "continue": true,

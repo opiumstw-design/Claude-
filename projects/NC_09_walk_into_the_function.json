@@ -1,0 +1,33 @@
+{
+ "audio": "media/sources/Download_19b.mp4",
+ "start": 0,
+ "end": 10.9,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How I walk into the function knowing nobody invited me on some nonchalant shi",
+ "segments": [
+  {
+   "src": "media/clips/2026-06-08_20.01.16.mov",
+   "in": 6.0,
+   "beats": 4
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.3
+  },
+  {
+   "src": "media/clips/2026-07-17_18.58.44.mp4",
+   "in": 10.6,
+   "beats": 64,
+   "y": 0.4,
+   "transition": "white"
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}
