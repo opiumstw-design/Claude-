@@ -1,0 +1,50 @@
+{
+ "audio": "media/sources/Download_18b.mp4",
+ "start": 0,
+ "end": 16.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-03_08.09.13.mov",
+   "in": 1.0,
+   "beats": 5,
+   "caption": "7:50am: doing the homework I had 2 weeks for"
+  },
+  {
+   "src": "media/clips/2026-07-24_16.18.31.mov",
+   "in": 2.0,
+   "beats": 5,
+   "caption": "8:30am: on the coach praying the teacher forgets"
+  },
+  {
+   "src": "media/clips/2026-09-17_16.40.24.mov",
+   "in": 0.5,
+   "beats": 5,
+   "caption": "9:00am: walking in like I did it"
+  },
+  {
+   "src": "media/clips/2026-08-26_11.53.32.mov",
+   "in": 0.0,
+   "beats": 5,
+   "caption": "Me when the teacher says “hand it in”:",
+   "transition": "cut"
+  },
+  {
+   "src": "media/clips/2026-09-17_16.41.14.mov",
+   "in": 0.3,
+   "beats": 4,
+   "caption": "Me coming back from the toilet when the lesson’s finished 😭",
+   "transition": "white"
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 7.0
+  }
+ ]
+}

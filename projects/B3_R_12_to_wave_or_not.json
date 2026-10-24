@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_20.mp4",
+ "start": 0,
+ "end": 8.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.26.11.mov",
+   "in": 5.5,
+   "beats": 6
+  },
+  {
+   "src": "media/clips/2026-07-17_18.01.34.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ],
+ "caption": "When you see someone you know and have to decide if you’re waving or not"
+}

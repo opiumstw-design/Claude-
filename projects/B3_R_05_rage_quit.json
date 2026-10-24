@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_24.mp4",
+ "start": 0,
+ "end": 10.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-05_20.55.01.mov",
+   "in": 0.3,
+   "beats": 12
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.8
+  }
+ ],
+ "caption": "Guys will be grown ass men rage quitting a game then hopping straight back on 😭"
+}

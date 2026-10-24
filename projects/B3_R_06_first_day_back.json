@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_16.mp4",
+ "start": 0,
+ "end": 6.2,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-09-17_16.40.24.mov",
+   "in": 0.3,
+   "beats": 64
+  }
+ ],
+ "caption": "How dudes be on the first day back acting like they didn’t fail every test 😭"
+}

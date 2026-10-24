@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_28.mp4",
+ "start": 0,
+ "end": 4.9,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-06_20.18.50.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ],
+ "caption": "How dudes be walking out of their last exam"
+}

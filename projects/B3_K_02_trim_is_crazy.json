@@ -1,0 +1,37 @@
+{
+ "audio": "media/sources/Download_25.mp4",
+ "start": 0,
+ "end": 14.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.45.58.mov",
+   "in": 0.5,
+   "beats": 10,
+   "caption": "Me: “nah bro’s trim is lowk crazy”"
+  },
+  {
+   "src": "media/clips/2026-07-17_18.36.44.mov",
+   "in": 1.5,
+   "beats": 8,
+   "caption": "Bro who was standing right behind me:"
+  },
+  {
+   "src": "media/clips/2026-07-17_18.38.51.mov",
+   "in": 1.5,
+   "beats": 8,
+   "caption": "Me 2 seconds later:"
+  },
+  {
+   "src": "media/clips/2026-07-17_18.30.00.mov",
+   "in": 0.0,
+   "beats": 64,
+   "caption": "Me hiding till he calms down 😭"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "audio": "media/sources/Download_14c.mp4",
+ "start": 0,
+ "end": 12.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-09-22_23.14.16.mov",
+   "in": 0.0,
+   "beats": 10,
+   "y": 0.45
+  },
+  {
+   "src": "media/clips/2026-09-22_23.14.16.mov",
+   "in": 7.8,
+   "beats": 64,
+   "y": 0.45,
+   "transition": "white"
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "Me acting nonchalant at the function until my song comes on 😭"
+}

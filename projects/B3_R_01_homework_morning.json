@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_10d.mp4",
+ "start": 0,
+ "end": 11.4,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-03_08.09.13.mov",
+   "in": 0.3,
+   "beats": 10
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 1.0
+  }
+ ],
+ "caption": "POV: you’re doing the homework the morning it’s due 💔"
+}

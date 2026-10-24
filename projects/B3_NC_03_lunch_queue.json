@@ -1,0 +1,32 @@
+{
+ "audio": "media/sources/Download_7d.mp4",
+ "start": 0,
+ "end": 8.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.45.58.mov",
+   "in": 1.5,
+   "beats": 4,
+   "y": 0.45
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.2
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.2
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "When the whole school is running for the lunch queue but I gotta stay nonchalant"
+}

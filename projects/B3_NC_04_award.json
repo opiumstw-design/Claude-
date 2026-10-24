@@ -1,0 +1,39 @@
+{
+ "audio": "media/sources/Download_6e.mp4",
+ "start": 0,
+ "end": 11.7,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-19_22.09.48.mov",
+   "in": 1.0,
+   "beats": 6,
+   "y": 0.42
+  },
+  {
+   "continue": true,
+   "beats": 6,
+   "skip": 1.0
+  },
+  {
+   "src": "media/clips/2026-08-05_20.53.48.mov",
+   "in": 1.0,
+   "beats": 6,
+   "y": 0.42,
+   "transition": "white"
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 1.0
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "Me if there was an award for being the most chill nonchalant mf"
+}

@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_22.mp4",
+ "start": 0,
+ "end": 6.7,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.22.16.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ],
+ "caption": "How dudes be when someone says “last one to the shop is paying” 😭"
+}

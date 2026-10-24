@@ -1,0 +1,35 @@
+{
+ "audio": "media/sources/Download_6e.mp4",
+ "start": 0,
+ "end": 9.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-24_23.17.28.mov",
+   "in": 0.3,
+   "beats": 4,
+   "y": 0.45
+  },
+  {
+   "continue": true,
+   "beats": 4,
+   "skip": 0.3,
+   "bw": true,
+   "transition": "white"
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.3,
+   "bw": true
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "Walking through arrivals after a holiday: AURA +1000"
+}

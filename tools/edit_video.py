@@ -23,6 +23,7 @@ ranking uses "title" + "items". Each segment is one clip, a whole number of beat
 }
 A segment "caption" (skits: "teacher: ..." then "me:") replaces the caption from that
 segment on, until another segment sets one.
+"bw": true shows that segment in black and white (the "aura" switch on a beat drop).
 {"continue": true, "beats": 4, "skip": 0.5} carries on with the previous segment's clip,
 0.5 s after where it was cut, so a beat mix jumps the same clip forward.
 Clips are never zoomed: one that is already about 9:16 fills the frame, anything wider
@@ -47,6 +48,37 @@ FONTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 BOLD = os.path.join(FONTS, "Montserrat_700Bold.ttf")
 SEMI = os.path.join(FONTS, "Montserrat_600SemiBold.ttf")
 TRACKING = -0.02  # letter spacing, in em; the app sets Classic text tight
+EMOJI_FONT = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"  # bitmap font: only renders at 109 px
+_emoji_cache = {}
+
+
+def is_emoji(ch):
+    o = ord(ch)
+    return o >= 0x1F000 or 0x2600 <= o <= 0x27BF
+
+
+def emoji_image(ch, size):
+    """A colour emoji scaled to sit on a line of `size` px text."""
+    key = (ch, size)
+    if key not in _emoji_cache:
+        big = Image.new("RGBA", (136, 128), (0, 0, 0, 0))
+        ImageDraw.Draw(big).text((0, 0), ch, font=ImageFont.truetype(EMOJI_FONT, 109), embedded_color=True)
+        big = big.crop(big.getbbox() or (0, 0, 1, 1))
+        side = int(size * 1.02)
+        _emoji_cache[key] = big.resize((side, side), Image.LANCZOS)
+    return _emoji_cache[key]
+
+
+def glyph_runs(text):
+    """Split text into (is_emoji, chars) runs; variation selectors are dropped."""
+    runs = []
+    for ch in text.replace("\ufe0f", ""):
+        e = is_emoji(ch)
+        if runs and runs[-1][0] == e and not e:
+            runs[-1][1] += ch
+        else:
+            runs.append([e, ch])
+    return runs
 MIX_FRAMES = 8
 TONEMAP = ("zscale=tin={t}:min=bt2020nc:pin=bt2020:rin=tv:t=linear:npl=203,format=gbrpf32le,"
            "zscale=p=bt709,tonemap=tonemap=mobius:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p")
@@ -76,7 +108,13 @@ def beat_grid(audio, start, end):
 
 
 def text_width(text, font):
-    return font.getlength(text) + TRACKING * font.size * max(len(text) - 1, 0)
+    w = 0
+    for e, run in glyph_runs(text):
+        if e:
+            w += font.size * 1.1
+        else:
+            w += font.getlength(run) + TRACKING * font.size * max(len(run) - 1, 0)
+    return w
 
 
 def wrap(text, font, max_w):
@@ -100,15 +138,28 @@ def draw_text(img, xy, text, font, center=False):
     W, H = img.size
     x0 = xy[0] - text_width(text, font) / 2 if center else xy[0]
     track = TRACKING * font.size
+    # lay the line out once: letters advance with tight tracking, emojis are pasted as images
+    placed, x = [], x0
+    for e, run in glyph_runs(text):
+        if e:
+            placed.append((True, run, x))
+            x += font.size * 1.1
+            continue
+        for i, ch in enumerate(run):
+            placed.append((False, ch, x + font.getlength(run[:i]) + track * i))
+        x += font.getlength(run) + track * len(run)
     shadow = Image.new("L", (W, H), 0)
     sd, d = ImageDraw.Draw(shadow), ImageDraw.Draw(img)
-    for i, ch in enumerate(text):
-        x = x0 + font.getlength(text[:i]) + track * i
-        sd.text((x + 2, xy[1] + 3), ch, font=font, fill=140)
+    for e, ch, x in placed:
+        if not e:
+            sd.text((x + 2, xy[1] + 3), ch, font=font, fill=140)
     img.paste(Image.new("RGBA", (W, H), (0, 0, 0, 255)), (0, 0), shadow.filter(ImageFilter.GaussianBlur(5)))
-    for i, ch in enumerate(text):
-        x = x0 + font.getlength(text[:i]) + track * i
-        d.text((x, xy[1]), ch, font=font, fill=(255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 230))
+    for e, ch, x in placed:
+        if e:
+            em = emoji_image(ch, font.size)
+            img.alpha_composite(em, (int(x + font.size * 0.04), int(xy[1] + font.size * 0.12)))
+        else:
+            d.text((x, xy[1]), ch, font=font, fill=(255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 230))
 
 
 def overlay(spec, shown, caption, W, H):
@@ -266,7 +317,7 @@ def main(spec_path, out_path):
             fades.append(f"fade=t=out:st={(visible - ramp * fps) / fps:.3f}:d={ramp:.3f}:color=white")
         hdr = TONEMAP.format(t=info["transfer"]) if info["transfer"] in ("arib-std-b67", "smpte2084") else None
         vf = ",".join(x for x in [
-            hdr, s.get("vf"), f"setpts=PTS/{speed}" if speed != 1 else None,
+            hdr, s.get("vf"), "hue=s=0" if s.get("bw") else None, f"setpts=PTS/{speed}" if speed != 1 else None,
             *fit(s, info, W, H, window(spec, W, H)), "setsar=1", f"fps={fps}", f"tpad=stop_mode=clone:stop={n}",
             "settb=1/" + str(fps), *fades] if x)
         p = os.path.join(tmp, f"seg{k:03d}.mp4")

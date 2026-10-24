@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_26.mp4",
+ "start": 0,
+ "end": 8.3,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.15.01.mov",
+   "in": 0.5,
+   "beats": 8
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.8
+  }
+ ],
+ "caption": "When bro says he’s “outside” and you’re the only one there"
+}

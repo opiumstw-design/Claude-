@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_11d.mp4",
+ "start": 0,
+ "end": 10.6,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-09-17_16.41.14.mov",
+   "in": 0.0,
+   "beats": 5
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 6.5
+  }
+ ],
+ "caption": "Guys will be grown ass men coming back from the toilet like they just won the lottery 😭"
+}

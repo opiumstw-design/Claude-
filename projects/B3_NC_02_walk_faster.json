@@ -1,0 +1,38 @@
+{
+ "audio": "media/sources/Download_8d.mp4",
+ "start": 0,
+ "end": 15.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.01.06.mov",
+   "in": 0.3,
+   "beats": 8,
+   "y": 0.45
+  },
+  {
+   "continue": true,
+   "beats": 8,
+   "skip": 0.6
+  },
+  {
+   "continue": true,
+   "beats": 8,
+   "skip": 0.6,
+   "transition": "white"
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.4
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0,
+ "caption": "When the teacher says “walk faster” but I gotta stay nonchalant.."
+}

@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_23.mp4",
+ "start": 0,
+ "end": 5.2,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.39.53.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ],
+ "caption": "How dudes be running when the teacher says whoever’s back first can leave early"
+}
