@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_22.mp4",
+ "start": 0,
+ "end": 10.1,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "When you and bro bring the ball out on sum NBA shi but you’re genuinely ahh 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-04-24_13.49.27.mp4",
+   "in": 1.0,
+   "beats": 12
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 3.0
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "audio": "media/sources/Download_24.mp4",
+ "start": 0,
+ "end": 10.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: you’re watching bro’s highlights and they’re all fouls 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-02_18.54.39.mov",
+   "in": 0.0,
+   "beats": 64,
+   "y": 0.0
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 2.0,
+ "caption_y": 0.29
+}

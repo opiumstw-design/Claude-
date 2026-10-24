@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_26.mp4",
+ "start": 0,
+ "end": 8.3,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "When bro falls asleep first at the sleepover 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-14_15.51.55.mov",
+   "in": 1.2,
+   "beats": 64
+  }
+ ]
+}

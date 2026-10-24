@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_10d.mp4",
+ "start": 0,
+ "end": 11.4,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: you’re at bro’s house and you smell food but you don’t know if it’s for you 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-07_20.59.31.mov",
+   "in": 2.0,
+   "beats": 10
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 1.5
+  }
+ ]
+}

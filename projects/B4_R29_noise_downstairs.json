@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_9d.mp4",
+ "start": 0,
+ "end": 9.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "When it’s 3am and you hear a noise downstairs 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-03_08.09.53.mov",
+   "in": 0.5,
+   "beats": 64
+  }
+ ]
+}

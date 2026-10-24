@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_25.mp4",
+ "start": 3.0,
+ "end": 13.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "When you’ve been sat in the same lesson all day and the bell finally goes 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.58.44.mp4",
+   "in": 4.0,
+   "beats": 10
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.5
+  }
+ ]
+}

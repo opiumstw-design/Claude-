@@ -1,0 +1,22 @@
+{
+ "audio": "media/sources/Download_10d.mp4",
+ "start": 0,
+ "end": 10.6,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: you sent it in the wrong group chat 💔",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-15_11.37.17.mov",
+   "in": 0.3,
+   "beats": 64,
+   "y": 0.41
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}

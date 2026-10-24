@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_4.mp4",
+ "start": 0,
+ "end": 8.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "Every 5 a side has that one guy who goes down after the first sprint 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-06_16.46.42.mov",
+   "in": 0.0,
+   "beats": 4
+  },
+  {
+   "src": "media/clips/2026-07-06_16.46.44.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_21.mp4",
+ "start": 0,
+ "end": 9.5,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: you’re losing on FC and bro won’t stop commentating 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-26_18.04.07.mov",
+   "in": 0.3,
+   "beats": 64
+  }
+ ]
+}

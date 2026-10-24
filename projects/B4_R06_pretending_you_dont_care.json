@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_11d.mp4",
+ "start": 0,
+ "end": 10.5,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: you’re pretending you don’t care but she just texted back 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-05-29_23.27.42.mov",
+   "in": 0.5,
+   "beats": 64
+  }
+ ]
+}

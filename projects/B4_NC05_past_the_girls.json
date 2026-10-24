@@ -1,0 +1,33 @@
+{
+ "audio": "media/sources/Download_17b.mp4",
+ "start": 0,
+ "end": 12.5,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "How I walk past the group of girls on sum nonchalant shi",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.01.06.mov",
+   "in": 0.3,
+   "beats": 8,
+   "y": 0.45
+  },
+  {
+   "continue": true,
+   "beats": 8,
+   "skip": 0.5
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.5,
+   "transition": "white"
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}

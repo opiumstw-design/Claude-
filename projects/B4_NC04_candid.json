@@ -1,0 +1,33 @@
+{
+ "audio": "media/sources/Download_15c.mp4",
+ "start": 0,
+ "end": 12.9,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: bro said he’s taking a candid",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.30.20.mov",
+   "in": 1.0,
+   "beats": 8,
+   "y": 0.3
+  },
+  {
+   "continue": true,
+   "beats": 8,
+   "skip": 1.0
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 1.0,
+   "transition": "white"
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}

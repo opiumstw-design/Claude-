@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_23.mp4",
+ "start": 0,
+ "end": 8.6,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "That one guy who starts shadowboxing after every fight video 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-26_23.00.25.mp4",
+   "in": 0.5,
+   "beats": 64
+  }
+ ]
+}

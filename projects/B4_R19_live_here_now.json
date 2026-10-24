@@ -1,0 +1,24 @@
+{
+ "audio": "media/sources/Download_6.mp4",
+ "start": 0,
+ "end": 12.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: first day of holiday and you’re already acting like you live there 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-28_14.28.55.mov",
+   "in": 0.3,
+   "beats": 16
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 1.0
+  }
+ ]
+}

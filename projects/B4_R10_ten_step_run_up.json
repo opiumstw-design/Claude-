@@ -1,0 +1,20 @@
+{
+ "audio": "media/sources/Download_21.mp4",
+ "start": 0,
+ "end": 8.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "That one guy who takes a 10 step run up for every free kick 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-06_16.46.49.mov",
+   "in": 3.0,
+   "beats": 64,
+   "speed": 0.25
+  }
+ ]
+}

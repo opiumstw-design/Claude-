@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_26.mp4",
+ "start": 0,
+ "end": 4.4,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: you told everyone you’re nice at football and now they’re all watching 💔",
+ "segments": [
+  {
+   "src": "media/clips/2026-06-14_19.41.25.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ]
+}

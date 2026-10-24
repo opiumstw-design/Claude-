@@ -1,0 +1,27 @@
+{
+ "audio": "media/sources/Download_13c.mp4",
+ "start": 0,
+ "end": 7.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "Me at the function when I don’t know nobody but I’m still chilling on sum nonchalant shi",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.29.22.mov",
+   "in": 0.3,
+   "beats": 6,
+   "y": 0.32
+  },
+  {
+   "continue": true,
+   "beats": 64,
+   "skip": 0.4
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}

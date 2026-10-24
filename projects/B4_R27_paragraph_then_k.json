@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_17.mp4",
+ "start": 0,
+ "end": 10.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "Guys who type a whole paragraph then delete it and send “k” 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-17_15.29.57.mp4",
+   "in": 1.8,
+   "beats": 64
+  }
+ ]
+}

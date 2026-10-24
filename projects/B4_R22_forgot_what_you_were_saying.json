@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_22.mp4",
+ "start": 0,
+ "end": 10.1,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: you’re explaining something and halfway through you forget what you were saying 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-08_08.10.52.mov",
+   "in": 0.5,
+   "beats": 64
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "audio": "media/sources/Download_7d.mp4",
+ "start": 0,
+ "end": 8.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "When bro tells a story and you already know it’s cap 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-04-20_17.48.11.mp4",
+   "in": 0.5,
+   "beats": 8
+  },
+  {
+   "src": "media/clips/2026-06-22_13.36.40.mp4",
+   "in": 0.3,
+   "beats": 64,
+   "transition": "white"
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}

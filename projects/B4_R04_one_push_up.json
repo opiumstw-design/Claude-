@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_23.mp4",
+ "start": 0,
+ "end": 4.6,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: you haven’t worked out in months and try one push up 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-05-10_16.21.30.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ]
+}

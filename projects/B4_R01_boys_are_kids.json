@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_19.mp4",
+ "start": 0,
+ "end": 6.2,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "Having boys as friends is like having kids that don’t listen 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-04-20_22.14.31.mp4",
+   "in": 0.2,
+   "beats": 64
+  }
+ ]
+}

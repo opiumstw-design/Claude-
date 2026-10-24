@@ -1,0 +1,22 @@
+{
+ "audio": "media/sources/Download_11.mp4",
+ "start": 0,
+ "end": 8.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "When someone says “why are you so quiet” and I just look at them 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-10-17_18.29.34.mov",
+   "in": 0.3,
+   "beats": 64,
+   "y": 0.22
+  }
+ ],
+ "layout": "window",
+ "window_ratio": 1.0
+}

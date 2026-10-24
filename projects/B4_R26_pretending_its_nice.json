@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_28.mp4",
+ "start": 0,
+ "end": 8.3,
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix",
+ "caption": "POV: it tastes horrible but you’re pretending it’s nice 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-08-17_15.29.01.mov",
+   "in": 0.5,
+   "beats": 64
+  }
+ ]
+}
