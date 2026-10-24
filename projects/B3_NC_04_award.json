@@ -13,7 +13,8 @@
    "src": "media/clips/2026-07-19_22.09.48.mov",
    "in": 1.0,
    "beats": 6,
-   "y": 0.42
+   "y": 0.42,
+   "vf": "eq=gamma=1.35:brightness=0.03:saturation=1.1"
   },
   {
    "continue": true,
@@ -25,7 +26,8 @@
    "in": 1.0,
    "beats": 6,
    "y": 0.42,
-   "transition": "white"
+   "transition": "white",
+   "vf": "eq=gamma=1.35:brightness=0.03:saturation=1.1"
   },
   {
    "continue": true,
