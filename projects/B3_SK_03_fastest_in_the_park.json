@@ -1,0 +1,33 @@
+{
+ "audio": "media/sources/Download_19.mp4",
+ "start": 0,
+ "end": 9.0,
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.38.51.mov",
+   "in": 0.5,
+   "beats": 8,
+   "caption": "Fastest boys in the park:\n3. these two"
+  },
+  {
+   "src": "media/clips/2026-07-17_18.32.34.mov",
+   "in": 4.6,
+   "beats": 6,
+   "caption": "Fastest boys in the park:\n2. bro who was hiding in the bush",
+   "transition": "cut"
+  },
+  {
+   "src": "media/clips/2026-07-17_18.39.53.mov",
+   "in": 0.0,
+   "beats": 64,
+   "caption": "Fastest boys in the park:\n1. him 😭",
+   "transition": "cut"
+  }
+ ],
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}

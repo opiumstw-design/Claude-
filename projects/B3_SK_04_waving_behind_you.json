@@ -1,0 +1,19 @@
+{
+ "audio": "media/sources/Download_16.mp4",
+ "start": 0,
+ "end": 3.7,
+ "caption": "When you wave back at someone but they were waving at the person behind you 😭",
+ "segments": [
+  {
+   "src": "media/clips/2026-07-17_18.01.34.mov",
+   "in": 0.0,
+   "beats": 64
+  }
+ ],
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "transition": "mix"
+}
