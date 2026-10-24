@@ -18,5 +18,6 @@
   }
  ],
  "layout": "window",
- "window_ratio": 1.0
+ "window_ratio": 1.0,
+ "caption_y": 0.17
 }
